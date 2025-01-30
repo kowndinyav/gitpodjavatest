@@ -22,5 +22,5 @@
       }
     },
     "forwardPorts": [8080],
-    "postCreateCommand": "bash .devcontainer/setup.sh"
+    "postCreateCommand": "bash ./setup.sh"
   }
