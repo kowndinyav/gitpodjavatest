@@ -22,5 +22,5 @@
       }
     },
     "forwardPorts": [8080],
-    "postCreateCommand": "bash ./setup.sh"
+    "postCreateCommand": "bash ${containerWorkspaceFolder}/setup.sh"
   }
