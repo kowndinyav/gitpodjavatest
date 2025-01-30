@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Download and setup Tomcat
-wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.tar.gz
+wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.tar.gz
 
-tar xvf apache-tomcat-9.0.85.tar.gz
-rm apache-tomcat-9.0.85.tar.gz
-mv apache-tomcat-9.0.85 ~/tomcat
+tar xvf apache-tomcat-9.0.98.tar.gz
+rm apache-tomcat-9.0.98.tar.gz
+mv apache-tomcat-9.0.98 ~/tomcat
 
 # Make Tomcat scripts executable
 chmod +x ~/tomcat/bin/*.sh
