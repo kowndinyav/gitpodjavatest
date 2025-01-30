@@ -1,6 +1,6 @@
 {
     "name": "Java Maven Tomcat",
-    "image": "gitpod/workspace-full",
+    "image": "gitpod/workspace-java-17",
     "features": {
       "ghcr.io/devcontainers/features/java:1": {
         "version": "17",
