@@ -1,0 +1,15 @@
+image:
+  file: .devcontainer/devcontainer.json
+
+tasks:
+  - name: Start Tomcat
+    init: |
+      echo "Waiting for setup to complete..."
+      while [ ! -d ~/tomcat ]; do sleep 1; done
+    command: |
+      echo "Starting Tomcat..."
+      ~/tomcat/bin/catalina.sh run
+
+ports:
+  - port: 8080
+    onOpen: open-preview

@@ -1,0 +1,26 @@
+{
+    "name": "Java Maven Tomcat",
+    "image": "gitpod/workspace-full",
+    "features": {
+      "ghcr.io/devcontainers/features/java:1": {
+        "version": "17",
+        "installMaven": true
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "vscjava.vscode-java-pack",
+          "vscjava.vscode-maven",
+          "redhat.vscode-xml",
+          "adashen.vscode-tomcat"
+        ],
+        "settings": {
+          "java.compile.nullAnalysis.mode": "automatic",
+          "java.configuration.updateBuildConfiguration": "automatic"
+        }
+      }
+    },
+    "forwardPorts": [8080],
+    "postCreateCommand": "bash .devcontainer/setup.sh"
+  }
