@@ -6,12 +6,17 @@
         "name": "Debug Tomcat",
         "request": "launch",
         "mainClass": "org.apache.catalina.startup.Bootstrap",
+        "classPaths": [
+          "${env:HOME}/tomcat/bin/bootstrap.jar",
+          "${env:HOME}/tomcat/bin/tomcat-juli.jar",
+          "${workspaceFolder}/target/classes",
+          "${workspaceFolder}/target/test-classes"
+        ],
         "projectName": "${workspaceRootFolderName}",
         "args": ["start"],
         "vmArgs": [
           "-Dcatalina.home=${env:HOME}/tomcat",
           "-Dcatalina.base=${env:HOME}/tomcat",
-          "-Djava.endorsed.dirs=${env:HOME}/tomcat/endorsed",
           "-Djava.io.tmpdir=${env:HOME}/tomcat/temp",
           "-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager",
           "-Djava.util.logging.config.file=${env:HOME}/tomcat/conf/logging.properties"
